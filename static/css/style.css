@@ -1,0 +1,168 @@
+/* BOUNGING ARROW ANIMATION - START */
+.animated {
+    -webkit-animation-duration: .9s;
+    animation-duration: .9s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes bounce {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-9px);
+    }
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-9px);
+    }
+  }
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+  #animated-example {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+  }
+  hr {
+    position: relative;
+    top: 92px;
+    left: -300px;
+    width: 200px;
+  }
+/* BOUNGING ARROW ANIMATION - END */
+
+/* 
+ * =======================
+ * ///////////////////////
+ * =======================
+ */
+
+/* APPEARING LOGO ANIMATION - START */
+.reveal {
+    overflow:hidden;
+    position:relative;
+    display:inline-block;
+}
+
+.reveal:after {
+    content:" ";
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#191919;
+    z-index:2;
+    transition: all 2s ease;
+}
+
+.reveal.show:after {
+    left:100%
+}
+/* APPEARING LOGO ANIMATION - END */
+
+/* 
+ * =======================
+ * ///////////////////////
+ * =======================
+ */
+
+/* HOVER TEXT PERSPECTIVE ANIMATION - START */
+#titlesec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  perspective: 20px;
+}
+
+#inner {
+  transition: transform 0.5s;
+}
+/* HOVER TEXT PERSPECTIVE ANIMATION - END */
+
+/* 
+ * =======================
+ * ///////////////////////
+ * =======================
+ */
+
+/* HOVER SOFTWARE ICON TEXT - START */
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #191919;
+}
+
+.container:hover .semiOverlay {
+  opacity: 0.5 !important;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* HOVER SOFTWARE ICON TEXT - END */
+
+/* 
+ * =======================
+ * ///////////////////////
+ * =======================
+ */
+
+/* CUSTOM SCROLL - START */
+:root {
+  --shadow: #e4e4e4;
+  --scrollbarBG: #191919;
+  --thumbBG: #e4e4e4;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+}
+/* CUSTOM SCROLL - END */
