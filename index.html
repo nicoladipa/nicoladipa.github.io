@@ -14,6 +14,9 @@
 
 <!--DEBUG BORDER: border-2 border-yellow-200 -->
 <body class="bg-black bg-opacity-90" onload="showLogo()">
+    <div id="loading">
+        <img src="/img/Animation.gif" alt="Loading...">
+    </div>
     <!-- NAVBAR -->
     <nav class="w-screen h-16 flex pt-1 fixed top-0 bg-[#191919] border-b-8 border-[#191919] z-10">
         <!-- TOP-LEFT CATEGORIES LABELS -->
@@ -23,7 +26,7 @@
             <a class="ml-2 hover:text-gray-400"  href="javascript:scrollToId('about');"> About </a>
         </p>
         <!-- TOP-CENTER LOGO -->
-        <div class="w-screen flex justify-center items-center ml-5">
+        <div class="w-screen flex justify-center items-center ml-5 mr-5">
             <div class="reveal">
                 <a href="javascript:scrollToTop();"><img src="/img/logo.png" class="h-12 mt-4 pb-2"></a>
             </div>

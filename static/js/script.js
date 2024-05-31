@@ -98,3 +98,17 @@ function scrollToTop() {
         scrollTop: $('body').offset().top
     }, 2000);
 }
+
+window.addEventListener('load', function() {
+  var loading = document.getElementById('loading');
+  // Add a delay before starting the fade out animation
+  setTimeout(function() {
+      // Add the fade out class to start the animation
+      loading.classList.add('fade-out');
+
+      // When the animation ends, remove the loading overlay from the DOM
+      loading.addEventListener('animationend', function() {
+          loading.parentElement.removeChild(loading);
+      });
+  }, 2000); // Replace 5000 with the duration of your gif animation in milliseconds
+});
